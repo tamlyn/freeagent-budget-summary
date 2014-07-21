@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+	"name": "FreeAgent Budget Summary",
+	"description": "Add a bar chart to the project summary page showing work and expenses against budget",
+	"version": "2.0",
+	"content_scripts": [
+		{
+			"matches": ["https://*.freeagent.com/projects/*", "https://*.freeagentcentral.com/projects/*"],
+			"js": ["jquery.js", "freeagent-budget-summary.user.js"]
+		}
+	]
+}
